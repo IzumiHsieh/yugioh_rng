@@ -20,10 +20,13 @@ public:
 
 public slots:
     void seedEntered();
+    void positionEntered();
 
 private:
-    QLineEdit *seedLineEdit;
-    QLineEdit *positionLineEdit;
+    QLineEdit *seedInputLineEdit;
+    QLineEdit *positionOutputLineEdit;
+    QLineEdit *positionInputLineEdit;
+    QLineEdit *seedOutputLineEdit;
 };
 //! [0]
 

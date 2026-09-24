@@ -148,3 +148,10 @@ int get_cong_for_fac(mat32gf2* mat, int i) {
     }
     return indices[i][el];
 }
+
+u32 get_seed_for_pos(u32 pos) {
+    mat32gf2 ygo_mat, step_mat;
+    init_ygo(&ygo_mat);
+    pow_mat(&ygo_mat, pos, &step_mat);
+    return apply_mat(&step_mat, 1);
+}
