@@ -53,3 +53,5 @@ The executable should be in the main folder.
 
 ## Using
 Just use your favorite emulator's memory viewer function to look at address 0x020213CC. Make sure to set the size to 4 bytes. Little endian is usually the default, but check that too. Then, simply input the seed in hex format and the program will output its position for you.
+
+You can also output a desired position and get the corresponding seed.
